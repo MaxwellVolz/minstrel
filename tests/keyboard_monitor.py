@@ -15,8 +15,13 @@ def on_release(key):
         return False
 
 
-# ...or, in a non-blocking fashion:
+# blocking
+# with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
+#     listener.join()
+
+# non-blocking
 listener = keyboard.Listener(on_press=on_press, on_release=on_release)
 listener.start()
 
+# wait for shell input
 input()
