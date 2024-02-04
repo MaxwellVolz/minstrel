@@ -6,8 +6,6 @@ print(screenWidth, screenHeight)
 currentMouseX, currentMouseY = pyautogui.position()  # Get the XY position of the mouse.
 print(currentMouseX, currentMouseY)
 
-pyautogui.alert("After this message a spiral will be drawn.")
-
 
 def draw_square_spiral(size=100, speed=0.3, tween=pyautogui.easeInOutQuad):
 
@@ -22,4 +20,5 @@ def draw_square_spiral(size=100, speed=0.3, tween=pyautogui.easeInOutQuad):
         pyautogui.drag(0, -distance, duration=speed, tween=tween)  # move up
 
 
+pyautogui.alert("After this message a spiral will be drawn.")
 draw_square_spiral(50, 0.1, pyautogui.easeInQuad)
