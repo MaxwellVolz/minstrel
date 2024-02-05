@@ -136,4 +136,3 @@ cython_debug/
 # Debug Screenshots
 screenshots/*
 matches/*
-screenshots_for_matching/*
