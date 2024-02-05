@@ -25,10 +25,10 @@ pytest tests/
 ```
 
 
-## First Goal
 
-1. Detect Song Selection Key Press (E)
-2. Attempt to determine song on release
+Python and OpenCV, pynput, pyautogui
+
+
 
 ## Spell Orders
 
